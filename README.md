@@ -1,5 +1,5 @@
 ## Faces
-Faces is a React App that allows users to view facial inferences based on photos of their faces.  The app has drag/drop uploading capability and uses a third-party API to collect inferences about facial features from the uploaded photos.  The facial inferences are displayed to the uses.
+Faces is a React App that allows users to view facial inferences based on photos of their faces.  The app has drag/drop uploading capability and uses a third-party API to collect inferences about facial features from the uploaded photos.  The facial inferences are displayed to the users.
 
 
 ### Technologies / Dependencies

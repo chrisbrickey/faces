@@ -1,22 +1,59 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
-  padding: 20px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.App-intro {
-  font-size: large;
+#headtext {
+  color: white;
+  font-size: 50px;
 }
+
+.upload-page {
+  background-color: blue;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-page-inner {
+  background-color: orange;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropZone {
+  background-color: pink;
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+}
+
+.downloaded-photo {
+  background-color: green;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

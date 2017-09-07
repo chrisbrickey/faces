@@ -51,38 +51,40 @@ class Upload extends React.Component {
 
     return (
         <div className="upload-page">
+          <div className="upload-page-inner">
 
-            <div className="dropZone">
-                <Dropzone
-                    multiple={false}
-                    accept="image/*"
-                    onDrop={this.onImageDrop.bind(this)}>
-                    <div className="insideDropZone">
-                        <div>
-                            Drag/drop an image here or double-click to select a file to upload
+                <div className="dropZone">
+                    <Dropzone
+                        multiple={false}
+                        accept="image/*"
+                        onDrop={this.onImageDrop.bind(this)}>
+                        <div className="insideDropZone">
+                            <div>
+                                Drag/drop an image here or double-click to select a file to upload
+                            </div>
                         </div>
-                    </div>
-                </Dropzone>
+                    </Dropzone>
+                </div>
+
+                <div>
+                    {this.state.photo.photo_url === 'z' ? null :
+                        (<div>
+                            <img
+                              src={this.state.photo.photo_url}
+                              className="downloaded-photo"
+                              />
+                         </div>)}
+                </div>
+
+                <button
+                    onClick={this.handleSubmit}
+                    type="submit"
+                    value="Submit"
+                    className="manual-submit">
+                    Post it
+                </button>
+
             </div>
-
-            <button
-                onClick={this.handleSubmit}
-                type="submit"
-                value="Submit"
-                className="manual-submit">
-                Post it
-            </button>
-
-            <div>
-                {this.state.photo.photo_url === 'z' ? null :
-                    (<div>
-                        <img
-                          src={this.state.photo.photo_url}
-                          className="downloaded-photo"
-                          />
-                     </div>)}
-            </div>
-
         </div>
 
 
